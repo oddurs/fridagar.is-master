@@ -1,0 +1,14 @@
+@import"//fonts.googleapis.com/css?family=RobotoDraft:400, 300";
+
+$os-bg: #fafafa;
+$os-blue: #03a9f4;
+$os-h-text: #444444;
+$os-p-text: #979797;
+$os-footer: #444444;
+
+$os-font: 'Roboto', sans-serif;
+
+.page {
+	background: $os-bg;
+	font-family: $os-font;
+}

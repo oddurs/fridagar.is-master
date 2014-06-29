@@ -1,0 +1,74 @@
+$light-gray: #ebebeb;
+$dark-gray: #dedede;
+$sexy-red: #ff5252;
+
+.cal {
+  background-color: $light-gray;
+  font-weight: 400;
+
+  .controls {
+    .clndr-previous-button, .clndr-next-button {
+      text-align: center;
+      cursor: pointer;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .month {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+  }
+
+  .clndr-grid {
+
+    .days-of-the-week {
+      width: 100%;
+      background-color: $sexy-red;
+
+      .header-day {
+        float: left;
+        width: 14.285714286%;
+        padding: 14px;
+        text-align: center;
+        color: white;
+      }
+    }
+
+    .days {
+      width: 100%;
+
+      .day, .empty {
+        float: left;
+        width: 14.285714286%;
+        height: 66px;
+        padding: 24px 0;
+        text-align: center;
+        color: #4f4f4f;
+        background-color: $light-gray;
+        border-bottom: 2px solid white;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .day.event .day-number, .empty.event .day-number {
+        padding-bottom: 4px;
+        border-bottom: 2px solid $sexy-red;
+      }
+
+      .day.adjacent-month .day-number, .empty.adjacent-month .day-number {
+        opacity: 0.3;
+      }
+
+      .today {
+        background-color: white;
+        background-image: none;
+      }
+    }
+  }
+}
+

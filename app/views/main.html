@@ -1,0 +1,29 @@
+<div class="row">
+  <!-- Scroll down button -->
+  <a id="scroll-down"><span class="glyphicon glyphicon-chevron-down"></span></a>
+  <img class="header-bird" src="images/header-bird.png" alt="tvitt tvitt">
+  <!-- Start CLNDR -->
+  <div class="col-md-8">
+    <div class="cal clearfix" calendar events="holidays"></div>  
+  </div>
+  <div class="col-md-4">
+    <div class="holiday-details">
+      <div class="holiday-details-title"><h3 class="title-description">Frídagar í þessum mánuði</h3></div>
+      <div class="holiday-details-events" ng-show="holidaysInCurrentMonth.length != 0">
+        <p>Það eru <span class="color-text">{{holidaysInCurrentMonth.length}}</span> frídagar í þessum mánuði.</p>
+        <hr>
+        <div class="holiday-details-event" ng-repeat="holiday in holidaysInCurrentMonth">
+          <div class="holiday-details-event-circle">
+            <span class="holiday-details-event-number color-text">{{holiday.holidayDate | momentdate:'DD'}}</span> 
+          </div>
+          <span class="holiday-details-event-name"> {{holiday.holidayName}}</span>
+        </div>
+        <!-- Það eru <span class="color-text">{{holidaysInCurrentMonth}}</span> frídagar í þessum mánuði. Næsti frídagur er eftir <span class="color-text">{{daysToNextHoliday}}</span> daga. -->
+      </div>
+      <div class="holiday-details-events" ng-show="holidaysInCurrentMonth.length == 0">
+        Engir frídagar í þessum mánuði :(
+      </div>
+    </div>
+  </div>
+  <!-- End CLNDR -->
+</div>

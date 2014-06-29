@@ -1,0 +1,438 @@
+@import url('http://fonts.googleapis.com/css?family=Roboto:400,300');
+// Color Variables
+$bgGrey: #fafafa;
+$altGrey: #eeeeee;
+$headerBlue: #03a9f4;
+$darkGrey: #444444;
+$hColor: #6c6c6c;
+$pColor: #7F8289;
+$footerGrey: #444444;
+$mainRed: #ff5252;
+// Font Variables
+$roboto: 'Roboto', sans-serif;
+// Body
+body {
+	background-color: $bgGrey;
+	letter-spacing: 0.02em;
+	font-size: 1em;
+	font-weight: 300;
+	h1, h2, h3, h4, h5, h6 {
+		color: $darkGrey;
+		font-weight: 300;
+		font-family: $roboto;
+	}
+	p, a, ul, li {
+		font-weight: 300;
+		color: $pColor;
+		font-family: $roboto;
+		font-size: 1em;
+		letter-spacing: 0.02em;
+	}
+	.container {
+		@media screen and (max-width: 760px) {
+			margin: 0 3%;
+		}
+	}
+}
+// Header
+header {
+	.header-container {
+		background: $headerBlue;
+		padding-top: 0;
+		padding-bottom: 4%;
+
+		// Gradient
+		background: #7acef5; /* Old browsers */
+		background: -moz-linear-gradient(top,  #7acef5 0%, #03a9f4 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7acef5), color-stop(100%,#03a9f4)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #7acef5 0%,#03a9f4 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #7acef5 0%,#03a9f4 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #7acef5 0%,#03a9f4 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #7acef5 0%,#03a9f4 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7acef5', endColorstr='#03a9f4',GradientType=0 ); /* IE6-9 */
+
+		@media screen and (max-width: 632px) {
+			background: $headerBlue;
+			padding-top: 12%;
+			padding-bottom: 2%;
+		}
+		.header-text {
+			font-size: 3.5em;
+			font-family: $roboto;
+			margin: 0 0 20px 0;
+			color: #FFFFFF;
+			font-weight: 300;
+			line-height: 1.5em;
+			letter-spacing: 0.02em;
+			@media screen and (max-width: 760px) {
+				font-size: 2.8em;
+				margin-bottom: 40px;
+			}
+			@media screen and (max-width: 400px) {
+				font-size: 1.8em;
+			}
+		}
+	}
+}
+.page {
+	background: $bgGrey;
+	font-family: $roboto;
+	@media screen and (max-width: 648px) {
+		padding-bottom: 10%;
+	}
+	@media screen and (max-width: 480px) {
+		padding-bottom: 920px;
+	}
+	@media screen and (max-width: 400px) {
+		padding-top: 60px;
+	}
+	#scroll-down {
+		padding: 21px 26.6px;
+		margin: -134px 0 0 15px;
+		background: $bgGrey;
+		color: $darkGrey;
+		border-radius: 50%;
+		-webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.3);
+		-moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.3);
+		box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.3);
+		position: absolute;
+		z-index: 999;
+		@media screen and (max-width: 400px) {
+			display: none;
+		}
+		.glyphicon {
+			top: 3px;
+		}
+	}
+	.header-bird {
+		float: right;
+		width: 120px;
+		right: 120px;
+		color: #444444;
+		position: absolute;
+		z-index: 999;
+		top: -101px;
+		@media screen and (max-width: 632px) {
+			display: none;
+		}
+	}
+	.title-description {
+		font-size: 2em;
+		font-weight: 300;
+		color: $darkGrey;
+		letter-spacing: 0.02em;
+		margin-top: 20px;
+		@media screen and (max-width: 992px) {
+			margin: 13% 0 2% 0;
+		}
+	}
+	.holiday-details-event {
+		padding-bottom: 12px;
+		font-size: 1em;
+		font-weight: 300!important;
+		.holiday-details-event-circle {
+			background-color: #ff5252;
+			border-radius: 50%;
+			width: 30px;
+			display: inline;
+			height: 30px;
+			position: absolute;
+			.holiday-details-event-number {
+				// Text
+				color: #fafafa;
+				font-size: 0.8em;
+				top: -1px;
+				left: 0px;
+				padding-left: 7px;
+			}
+		}
+		.holiday-details-event-name {
+			font-size: 1em;
+			font-weight: 300;
+			padding-left: 40px;
+		}
+	}
+}
+hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: blue;
+}
+.contribute {
+	background: $altGrey;
+	padding-top: 6%;
+	padding-bottom: 6%;
+	margin-right: 0;
+	overflow: hidden;
+	@media screen and (max-width: 992px) {
+		padding: 14% 0 12% 0;
+	}
+	@media screen and (max-width: 480px) {
+		padding-bottom: 16%; 
+	}
+	.col-md-5 {
+		left: -15px;
+	}
+
+	.bird-scene {
+		float: right;
+		width: 600px;
+		margin-top: -325px;
+		margin-bottom: 0;
+		@media screen and (max-width: 1100px) {
+			width: 540px;
+		}
+		@media screen and (max-width: 992px) {
+			width: 520px;
+			margin-top: -120px;
+		}
+		@media screen and (max-width: 790px) {
+			display: none;
+		}
+	}
+	.bird-scene-responsive {
+		display: none;
+		float: right;
+		margin-bottom: 0;
+		@media screen and (max-width: 790px) {
+			display: inline;
+			width: 340px;
+			margin-top: -150px;
+			margin-bottom: 50px;
+		}
+		@media screen and (max-width: 560px) {
+			display: none;
+		}
+	}
+
+	h4 {
+		color: $darkGrey;
+		font-weight: 300;
+		font-size: 2.0em;
+	}
+	p {
+	}
+	ul {
+		padding-bottom: 30px;
+		margin-top: -3%;
+		padding-left: 25px;
+	}
+	.download {
+		font-size: 0.8em;
+		padding: 15px 30px;
+		background: $mainRed;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 400;
+		letter-spacing: 3px;
+		.glyphicon {
+			top: 2px;
+			padding-right: 5px;
+		}
+	}
+}
+footer {
+	// overflow: hidden;
+	background: $footerGrey;
+	text-align: none;
+	width: 100%;
+	.ossp-logo {
+		width: 85px;
+		height: 60px;
+		float: left;
+		margin: 45px 0;
+		margin-left: -15px;
+		@media screen and (max-width: 645px) {
+			float: none;
+			margin: 5% auto;
+		}
+	}
+	.footer-navigation {
+		font-weight: 300;
+		color: $altGrey;
+		margin: 45px 0;
+		float: right;
+		margin-right: -15px;
+		margin-top: 60px;
+		@media screen and (max-width: 645px) {
+			margin: 0 auto 5% auto;
+			float: none;
+			padding-left: 0;
+		}
+		li {
+			display: inline;
+			padding: 0 7px;
+			@media screen and (min-width: 645px) {
+				padding: 0 0 0 15px;
+			}
+		}
+	}
+	.row {
+		margin-right: 0;
+	}
+	.container {
+	  margin-right: auto;
+	  margin-left: auto;
+	  padding-left: 15px;
+	  padding-right: 15px;
+	}
+}
+.cal {
+	font-weight: 300;
+	margin-right: 30px;
+	@media screen and (max-width: 850px) {
+		margin-right: 0px;
+	}
+	.clndr-grid {
+		border-bottom: 1px solid $bgGrey;
+		border-top: 1px solid $bgGrey;
+		.days-of-the-week {
+			width: 99.99%;
+			.header-day {
+				border-bottom: 2px solid $bgGrey;
+				border-top: 1px solid $bgGrey;
+			}
+		}
+		.days {
+			.day {
+				background: $altGrey;
+			}
+			.today {
+				background-color: $bgGrey;
+			}
+		}
+	}
+	.controls {
+		.month {
+			padding: 4% 0;
+			text-align: center;
+			text-transform: none;
+			font-weight: 300;
+			font-size: 1.4em;
+			color: $hColor;
+		}
+		.clndr-next-button, .clndr-previous-button {
+			padding: 3.9% 0;
+			font-size: 2.0em;
+		}
+	}
+}
+
+header {
+	/* To hide the horizontal scroller appearing during the animation */
+	overflow: hidden;
+}
+@mixin cloud-animate($prop) {
+	-webkit-transform: scale($prop);
+	-moz-transform: scale($prop);
+	transform: scale($prop);
+	opacity: $prop;
+	-webkit-animation: moveclouds ($prop * 75 + s) linear infinite;
+	-moz-animation: moveclouds ($prop * 75 + s) linear infinite;
+	-o-animation: moveclouds ($prop * 75 + s) linear infinite;
+}
+
+/* Time to finalise the cloud shape */
+.cloud {
+	width: 200px;
+	height: 60px;
+	background: #fff;
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	position: relative;
+	@media screen and (max-width: 632px) {
+		display: none;
+	}
+}
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute;
+	background: #fff;
+	width: 100px;
+	height: 80px;
+	position: absolute;
+	top: -15px;
+	left: 10px;
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+.cloud:after {
+	width: 120px;
+	height: 120px;
+	top: -55px;
+	left: auto;
+	right: 15px;
+}
+
+/* Time to animate */
+.x1 {
+	top: -160px;
+	@include cloud-animate(0.8);
+}
+.x2 {
+	left: 200px;
+	@include cloud-animate(0.75);
+}
+.x3 {
+	left: 250px;
+	top: 100px;
+	@include cloud-animate(0.65);
+}
+.x4 {
+	left: 470px;
+	top: 80px;
+	@include cloud-animate(0.6);
+}
+.x5 {
+	left: 150px;
+	top: -100px;
+	@include cloud-animate(0.55);
+}
+
+@mixin move-clouds($viewport) {
+	@-webkit-keyframes moveclouds {
+		0% {
+			margin-left: ($viewport + 100 + px);
+		}
+		100% {
+			margin-left: (-$viewport - 100 + px);
+		}
+	}
+	@-moz-keyframes moveclouds {
+		0% {
+			margin-left: ($viewport + 100 + px);
+		}
+		100% {
+			margin-left: (-$viewport - 100 + px);
+		}
+	}
+	@-o-keyframes moveclouds {
+		0% {
+			margin-left: ($viewport + 100 + px);
+		}
+		100% {
+			margin-left: (-$viewport - 100 + px);
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	@include move-clouds(1200)
+}
+@media screen and (max-width: 1000px) {
+	@include move-clouds(1000)
+}
+@media screen and (max-width: 800) {
+	@include move-clouds(800)
+}
+@media screen and (max-width: 600px) {
+	@include move-clouds(600)
+}
+@media screen and (max-width: 500px) {
+	@include move-clouds(500)
+}

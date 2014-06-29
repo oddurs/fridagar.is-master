@@ -1,0 +1,466 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300");
+body {
+  background-color: #fafafa;
+  letter-spacing: 0.02em;
+  font-size: 1em;
+  font-weight: 300; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    color: #444444;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif; }
+  body p, body a, body ul, body li {
+    font-weight: 300;
+    color: #7f8289;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.02em; }
+  @media screen and (max-width: 760px) {
+    body .container {
+      margin: 0 3%; } }
+
+header .header-container {
+  background: #03a9f4;
+  padding-top: 0;
+  padding-bottom: 4%;
+  background: #7acef5;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #7acef5 0%, #03a9f4 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7acef5), color-stop(100%, #03a9f4));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #7acef5 0%, #03a9f4 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #7acef5 0%, #03a9f4 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #7acef5 0%, #03a9f4 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #7acef5 0%, #03a9f4 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7acef5', endColorstr='#03a9f4',GradientType=0 );
+  /* IE6-9 */ }
+  @media screen and (max-width: 632px) {
+    header .header-container {
+      background: #03a9f4;
+      padding-top: 12%;
+      padding-bottom: 2%; } }
+  header .header-container .header-text {
+    font-size: 3.5em;
+    font-family: "Roboto", sans-serif;
+    margin: 0 0 20px 0;
+    color: #FFFFFF;
+    font-weight: 300;
+    line-height: 1.5em;
+    letter-spacing: 0.02em; }
+    @media screen and (max-width: 760px) {
+      header .header-container .header-text {
+        font-size: 2.8em;
+        margin-bottom: 40px; } }
+    @media screen and (max-width: 400px) {
+      header .header-container .header-text {
+        font-size: 1.8em; } }
+
+.page {
+  background: #fafafa;
+  font-family: "Roboto", sans-serif; }
+  @media screen and (max-width: 648px) {
+    .page {
+      padding-bottom: 10%; } }
+  @media screen and (max-width: 480px) {
+    .page {
+      padding-bottom: 920px; } }
+  @media screen and (max-width: 400px) {
+    .page {
+      padding-top: 60px; } }
+  .page #scroll-down {
+    padding: 21px 26.6px;
+    margin: -134px 0 0 15px;
+    background: #fafafa;
+    color: #444444;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.3);
+    box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.3);
+    position: absolute;
+    z-index: 999; }
+    @media screen and (max-width: 400px) {
+      .page #scroll-down {
+        display: none; } }
+    .page #scroll-down .glyphicon {
+      top: 3px; }
+  .page .header-bird {
+    float: right;
+    width: 120px;
+    right: 120px;
+    color: #444444;
+    position: absolute;
+    z-index: 999;
+    top: -101px; }
+    @media screen and (max-width: 632px) {
+      .page .header-bird {
+        display: none; } }
+  .page .title-description {
+    font-size: 2em;
+    font-weight: 300;
+    color: #444444;
+    letter-spacing: 0.02em;
+    margin-top: 20px; }
+    @media screen and (max-width: 992px) {
+      .page .title-description {
+        margin: 13% 0 2% 0; } }
+  .page .holiday-details-event {
+    padding-bottom: 12px;
+    font-size: 1em;
+    font-weight: 300 !important; }
+    .page .holiday-details-event .holiday-details-event-circle {
+      background-color: #ff5252;
+      border-radius: 50%;
+      width: 30px;
+      display: inline;
+      height: 30px;
+      position: absolute; }
+      .page .holiday-details-event .holiday-details-event-circle .holiday-details-event-number {
+        color: #fafafa;
+        font-size: 0.8em;
+        top: -1px;
+        left: 0px;
+        padding-left: 7px; }
+    .page .holiday-details-event .holiday-details-event-name {
+      font-size: 1em;
+      font-weight: 300;
+      padding-left: 40px; }
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: blue; }
+
+.contribute {
+  background: #eeeeee;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  margin-right: 0;
+  overflow: hidden; }
+  @media screen and (max-width: 992px) {
+    .contribute {
+      padding: 14% 0 12% 0; } }
+  @media screen and (max-width: 480px) {
+    .contribute {
+      padding-bottom: 16%; } }
+  .contribute .col-md-5 {
+    left: -15px; }
+  .contribute .bird-scene {
+    float: right;
+    width: 600px;
+    margin-top: -325px;
+    margin-bottom: 0; }
+    @media screen and (max-width: 1100px) {
+      .contribute .bird-scene {
+        width: 540px; } }
+    @media screen and (max-width: 992px) {
+      .contribute .bird-scene {
+        width: 520px;
+        margin-top: -120px; } }
+    @media screen and (max-width: 790px) {
+      .contribute .bird-scene {
+        display: none; } }
+  .contribute .bird-scene-responsive {
+    display: none;
+    float: right;
+    margin-bottom: 0; }
+    @media screen and (max-width: 790px) {
+      .contribute .bird-scene-responsive {
+        display: inline;
+        width: 340px;
+        margin-top: -150px;
+        margin-bottom: 50px; } }
+    @media screen and (max-width: 560px) {
+      .contribute .bird-scene-responsive {
+        display: none; } }
+  .contribute h4 {
+    color: #444444;
+    font-weight: 300;
+    font-size: 2.0em; }
+  .contribute ul {
+    padding-bottom: 30px;
+    margin-top: -3%;
+    padding-left: 25px; }
+  .contribute .download {
+    font-size: 0.8em;
+    padding: 15px 30px;
+    background: #ff5252;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px; }
+    .contribute .download .glyphicon {
+      top: 2px;
+      padding-right: 5px; }
+
+footer {
+  background: #444444;
+  text-align: none;
+  width: 100%; }
+  footer .ossp-logo {
+    width: 85px;
+    height: 60px;
+    float: left;
+    margin: 45px 0;
+    margin-left: -15px; }
+    @media screen and (max-width: 645px) {
+      footer .ossp-logo {
+        float: none;
+        margin: 5% auto; } }
+  footer .footer-navigation {
+    font-weight: 300;
+    color: #eeeeee;
+    margin: 45px 0;
+    float: right;
+    margin-right: -15px;
+    margin-top: 60px; }
+    @media screen and (max-width: 645px) {
+      footer .footer-navigation {
+        margin: 0 auto 5% auto;
+        float: none;
+        padding-left: 0; } }
+    footer .footer-navigation li {
+      display: inline;
+      padding: 0 7px; }
+      @media screen and (min-width: 645px) {
+        footer .footer-navigation li {
+          padding: 0 0 0 15px; } }
+  footer .row {
+    margin-right: 0; }
+  footer .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px; }
+
+.cal {
+  font-weight: 300;
+  margin-right: 30px; }
+  @media screen and (max-width: 850px) {
+    .cal {
+      margin-right: 0px; } }
+  .cal .clndr-grid {
+    border-bottom: 1px solid #fafafa;
+    border-top: 1px solid #fafafa; }
+    .cal .clndr-grid .days-of-the-week {
+      width: 99.99%; }
+      .cal .clndr-grid .days-of-the-week .header-day {
+        border-bottom: 2px solid #fafafa;
+        border-top: 1px solid #fafafa; }
+    .cal .clndr-grid .days .day {
+      background: #eeeeee; }
+    .cal .clndr-grid .days .today {
+      background-color: #fafafa; }
+  .cal .controls .month {
+    padding: 4% 0;
+    text-align: center;
+    text-transform: none;
+    font-weight: 300;
+    font-size: 1.4em;
+    color: #6c6c6c; }
+  .cal .controls .clndr-next-button, .cal .controls .clndr-previous-button {
+    padding: 3.9% 0;
+    font-size: 2.0em; }
+
+header {
+  /* To hide the horizontal scroller appearing during the animation */
+  overflow: hidden; }
+
+/* Time to finalise the cloud shape */
+.cloud {
+  width: 200px;
+  height: 60px;
+  background: #fff;
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  position: relative; }
+  @media screen and (max-width: 632px) {
+    .cloud {
+      display: none; } }
+
+.cloud:before, .cloud:after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  -moz-transform: rotate(30deg); }
+
+.cloud:after {
+  width: 120px;
+  height: 120px;
+  top: -55px;
+  left: auto;
+  right: 15px; }
+
+/* Time to animate */
+.x1 {
+  top: -160px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8;
+  -webkit-animation: moveclouds 60s linear infinite;
+  -moz-animation: moveclouds 60s linear infinite;
+  -o-animation: moveclouds 60s linear infinite; }
+
+.x2 {
+  left: 200px;
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  opacity: 0.75;
+  -webkit-animation: moveclouds 56.25s linear infinite;
+  -moz-animation: moveclouds 56.25s linear infinite;
+  -o-animation: moveclouds 56.25s linear infinite; }
+
+.x3 {
+  left: 250px;
+  top: 100px;
+  -webkit-transform: scale(0.65);
+  -moz-transform: scale(0.65);
+  transform: scale(0.65);
+  opacity: 0.65;
+  -webkit-animation: moveclouds 48.75s linear infinite;
+  -moz-animation: moveclouds 48.75s linear infinite;
+  -o-animation: moveclouds 48.75s linear infinite; }
+
+.x4 {
+  left: 470px;
+  top: 80px;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.6;
+  -webkit-animation: moveclouds 45s linear infinite;
+  -moz-animation: moveclouds 45s linear infinite;
+  -o-animation: moveclouds 45s linear infinite; }
+
+.x5 {
+  left: 150px;
+  top: -100px;
+  -webkit-transform: scale(0.55);
+  -moz-transform: scale(0.55);
+  transform: scale(0.55);
+  opacity: 0.55;
+  -webkit-animation: moveclouds 41.25s linear infinite;
+  -moz-animation: moveclouds 41.25s linear infinite;
+  -o-animation: moveclouds 41.25s linear infinite; }
+
+@media screen and (min-width: 1200px) {
+  @-webkit-keyframes moveclouds {
+    0% {
+      margin-left: 1300px; }
+
+    100% {
+      margin-left: -1300px; } }
+
+  @-moz-keyframes moveclouds {
+    0% {
+      margin-left: 1300px; }
+
+    100% {
+      margin-left: -1300px; } }
+
+  @-o-keyframes moveclouds {
+    0% {
+      margin-left: 1300px; }
+
+    100% {
+      margin-left: -1300px; } } }
+@media screen and (max-width: 1000px) {
+  @-webkit-keyframes moveclouds {
+    0% {
+      margin-left: 1100px; }
+
+    100% {
+      margin-left: -1100px; } }
+
+  @-moz-keyframes moveclouds {
+    0% {
+      margin-left: 1100px; }
+
+    100% {
+      margin-left: -1100px; } }
+
+  @-o-keyframes moveclouds {
+    0% {
+      margin-left: 1100px; }
+
+    100% {
+      margin-left: -1100px; } } }
+@media screen and (max-width: 800) {
+  @-webkit-keyframes moveclouds {
+    0% {
+      margin-left: 900px; }
+
+    100% {
+      margin-left: -900px; } }
+
+  @-moz-keyframes moveclouds {
+    0% {
+      margin-left: 900px; }
+
+    100% {
+      margin-left: -900px; } }
+
+  @-o-keyframes moveclouds {
+    0% {
+      margin-left: 900px; }
+
+    100% {
+      margin-left: -900px; } } }
+@media screen and (max-width: 600px) {
+  @-webkit-keyframes moveclouds {
+    0% {
+      margin-left: 700px; }
+
+    100% {
+      margin-left: -700px; } }
+
+  @-moz-keyframes moveclouds {
+    0% {
+      margin-left: 700px; }
+
+    100% {
+      margin-left: -700px; } }
+
+  @-o-keyframes moveclouds {
+    0% {
+      margin-left: 700px; }
+
+    100% {
+      margin-left: -700px; } } }
+@media screen and (max-width: 500px) {
+  @-webkit-keyframes moveclouds {
+    0% {
+      margin-left: 600px; }
+
+    100% {
+      margin-left: -600px; } }
+
+  @-moz-keyframes moveclouds {
+    0% {
+      margin-left: 600px; }
+
+    100% {
+      margin-left: -600px; } }
+
+  @-o-keyframes moveclouds {
+    0% {
+      margin-left: 600px; }
+
+    100% {
+      margin-left: -600px; } } }
